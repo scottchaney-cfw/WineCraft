@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Conversions</title>
+<style>
+  p {
+    color: white;
+	font-size: 18px;
+  }
+   li {
+    color: white;
+	font-size: 18px;
+  }
+</style>
+</head>
+<body style="background-color:black">
+<span style="color: white;">
+<H2>Conversions</H2>
+
+<H3>Sulfite Additions</H3>
+<ul>
+<li>Tons of grapes measured prior to crush</li>
+<li>Depending on the condition of the grapes more or less ppm KMBS (Potassium Metabisulfate) will be desired.</li>
+<li><i>Formula:</i></li>
+<li>grams of KMBS = Tons * Est Gallons Per Ton * Desired free ppm SO2 * 0.00757</li>
+</ul>
+<p>Gallons of juice or wine</p>
+<ul>
+<li>Recommended ppm is based on impiracle data for .8g/L and .5g/L</li>
+<li>.8g/L corresponds to the 40ppm free SO2 <i>rule of thumb</i> for wine at 3.5pH</li>
+<li>.5g/L corresponds to the lighter 25ppm free SO2 trend of reduced sulphites</li>
+<li><i>Formula:</i></li>
+<li>grams of KMBS = Gallons * (Recommended ppm - Measured ppm) * 0.00757</li>
+</ul>
+
+<p>Note that .8g/L corresponds to the 40ppm free rule of thumb for wine at 3.5pH.</p>
+<p>.5g/L corresponds to the lighter 25ppm trend of reduced sulfites. 
+Whites, especially sweets are kept at .8g/L, reds can be kept at .5g/L</p>
+<ul>
+<li>The empirical determination of ppm recommended at a given pH can be found by:</li>
+<li>.8g/L ppm = 0.0149 * e<sup>(2.2573 * pH)</sup></li>
+<li>.5g/L ppm = 0.0093 * e<sup>(2.2535 * pH)</sup></li>
+<li>The consolidated factor is obtained from:</li>
+<li>1 ppm = 1mg/L</li>
+<li>The percentage molecular weight of SO2 dissociated from KMBS is 57.6%</li>
+<li>(1mg/L) * ( 1g/1000mg) * 3.78541 L/gal * 1 gal * 1/0.576</li>
+<li>3.78541 / (1000 * 0.576) = 0.00657</li>
+<li>In order to account for storage degradation, impurities, and initial binding during addition the factor is increased 15% to 0.00757</li>
+</ul>
+
+<h3>Simple Conversions</h3>
+<ul>
+<li>lbs * 2000 = Tons</li>
+<li>Gallons = 3.71845 * Liters</li>
+<li>lbs = 2.21 * kg</li>
+<li>oz = 28.3495 * g</li>
+<li>tsp = 4.92892 * mL</li>
+</ul>
+
+<h3>YAN Additions</h3>
+<ul>
+<li>Recommended YAN is based on yeast strain requirements and nutrient used.</li>
+<li>New nutrients and yeast strains may be added through Settings.</li>
+<li><i>Formula:</i></li>
+<li>Recommended gram = (Required YAN - MeasuredYAN) * Liters * ppm per Gram Per Liter</li>
+</ul>
+
+<h3>Acid Additions</h3>
+<ul>
+<li>Run a bench trial to determine what mixture of acid is desired.</li>
+<li><i>Formula:</i></li>
+<li>Tartaric grams = ( Desired pH - Measured pH) * 10) * (Tartaric Percent/100) * Liters</li>
+<li>Malic grams = ( Desired pH - Measured pH) * 10) * ( (Tartaric Percent/100) / 1.2 ) * Liters</li>
+</ul>
+</body>
+</html>
